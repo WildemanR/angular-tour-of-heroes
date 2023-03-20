@@ -1,0 +1,11 @@
+<h1 id="main-content-header">{{title}}</h1>
+<nav>
+  <a routerLink="/dashboard" routerLinkActive="active">Dashboard</a>
+  <a routerLink="/heroes" routerLinkActive="active">Heroes</a>
+</nav>
+<!-- <app-heroes></app-heroes> -->
+<!-- <router-outlet></router-outlet> -->
+<div [@routeAnimation]="getAnimationData(routerOutlet)">
+  <router-outlet #routerOutlet="outlet"></router-outlet>
+</div>
+<app-messages></app-messages>
